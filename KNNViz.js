@@ -11,5 +11,12 @@ const KNNViz = () => {
   );
 };
 
-export default KNNViz;add basic KNN visualization component structure
+export default KNNViz;
+<input
+  type="range"
+  min="1"
+  max="10"
+  value={kValue}
+  onChange={(e) => setKValue(parseInt(e.target.value))}
+/>
 
