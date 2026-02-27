@@ -1,16 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 
 const KNNViz = () => {
+  const [kValue, setKValue] = useState(3);
+
   return (
     <div>
       <h2>K-Nearest Neighbors Visualization</h2>
-      <p>This module demonstrates KNN classification.</p>
+      <p>Current K: {kValue}</p>
     </div>
   );
 };
 
-export default KNNViz;
+export default KNNViz;add basic KNN visualization component structure
 
-
-
-feat: add basic KNN visualization component structure
