@@ -21,3 +21,12 @@ const updateWeight = () => {
   setWeight(weight - learningRate * gradient);
 };
 <button onClick={updateWeight}>Update Weight</button>
+<input
+  type="range"
+  min="0.01"
+  max="1"
+  step="0.01"
+  value={learningRate}
+  onChange={(e) => setLearningRate(parseFloat(e.target.value))}
+/>
+
