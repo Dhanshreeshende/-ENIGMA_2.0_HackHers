@@ -24,5 +24,12 @@ export default KNNViz;
   { x: 3, y: 4, label: "B" },
   { x: 5, y: 1, label: "A" },
 ];
+<ul>
+  {samplePoints.map((point, index) => (
+    <li key={index}>
+      ({point.x}, {point.y}) - Class {point.label}
+    </li>
+  ))}
+</ul>
 
 
