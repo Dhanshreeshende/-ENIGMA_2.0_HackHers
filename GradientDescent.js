@@ -16,3 +16,8 @@ const GradientDescent = () => {
 };
 
 export default GradientDescent;
+const updateWeight = () => {
+  const gradient = 2 * weight;
+  setWeight(weight - learningRate * gradient);
+};
+<button onClick={updateWeight}>Update Weight</button>
