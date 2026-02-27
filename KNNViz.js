@@ -19,4 +19,10 @@ export default KNNViz;
   value={kValue}
   onChange={(e) => setKValue(parseInt(e.target.value))}
 />
+    const samplePoints = [
+  { x: 1, y: 2, label: "A" },
+  { x: 3, y: 4, label: "B" },
+  { x: 5, y: 1, label: "A" },
+];
+
 
